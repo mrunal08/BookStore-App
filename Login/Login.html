@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet"
+            href="../Login/Login.css">
+          
+            <script src="../Login/Login.js"></script>
+  
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+            integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+            crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+            integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+            crossorigin="anonymous"> </script>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="main-container">
+
+        </div>
+        <div class="imgcard">
+            <div class="image1">
+                <div class="cartLogo">
+                    <img id="LoginPageLogo" src="../Images/loginPage.png" width="75%" height="75%"/>
+                </div>
+            </div>
+    
+            <div class="LoginLogoTitle">ONLINE BOOK SHOPPING</div>
+    
+        </div>
+    
+        <div class="MainContainer">
+            <div class="logSign">
+                <div class="login" id="loginHeading">LOGIN</div>
+                <div class="signup" id="signupHeading">SIGNUP</div>
+            </div>
+
+           
+            <!-- SIGNUP PAGE -->
+            <div class="details" id="signupDetails">
+                
+                <div class="redIdentifier">
+                    <div class="redIdentifierLogin"> </div>
+                    <div class="redIdentifierSignup"> </div>
+                </div>
+
+                <div class="sd">FullName</div>
+    
+                <div class="fullName">
+                    <div><input type="text" class="enterName" id="enterName" autocomplete="off"></div>
+                </div>
+                <div class="wrong" id="wrongName">Enter full name</div>
+    
+                <div class="sd">Email Id</div>
+    
+                <div class="emailId">
+                    <div><input type="email" id="enterEmail" class="enterEmail" autocomplete="off"></div>
+                </div>
+                <div class="wrong" id="incorrectEmail">Enter Email</div>
+    
+                <div class="sd">Password</div>
+    
+                <div class="password">
+                    <input type="password" id="enterPassword" class="enterPassword" autocomplete="off">
+                </div>
+                <div class="wrong" id="incorrectPassword">Enter Password</div>
+    
+                <div class="sd">Mobile Number</div>
+    
+                <div class="mobileNumber">
+                    <input type="text" id="enterPhoneNumber" class="enterPhoneNumber" autocomplete="off">
+                </div>
+                <div class="wrong" id="incorrectPhoneNumber">Enter Mobile Number</div>
+    
+                <button class="signupButton" id="signupButton">Signup</button>
+            </div>
+    
+    
+            <!-- LOGIN PAGE -->
+    
+    
+            <div class="loginDetails" id="loginDetails">
+    
+                <div class="sd2">Email Id</div>
+    
+                <div class="emailId2">
+                    <div><input type="email" id="enterEmail2" class="enterEmail2" autocomplete="off"></div>
+                </div>
+                <div class="wrong2" id="incorrectEmailLogin">Enter Email</div>
+    
+                <div class="sd2">Password</div>
+    
+                <div class="password2">
+                    <input type="password" id="enterPassword2" class="enterPassword2" autocomplete="off">
+                </div>
+                <div class="wrong2" id="incorrectPassword2">Enter Password</div>
+    
+                <button class="loginButton" id="loginButton">Login</button>
+    
+                <div class="or">--------OR--------</div>
+    
+                <div class="social">
+                    <button class="fbButton" id="fbButton">Facebook</button>
+                    <button class="googleButton" id="googleButton">Google</button>
+                </div>
+    
+            </div>
+    
+        </div>
+    </body>
+</html>

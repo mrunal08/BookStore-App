@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore DisplayBook Page</title>
+
+    <link rel="stylesheet" href="../DisplayBooks/DisplayBook.css">
+    <script src="../DisplayBooks/DisplayBook.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="header">
+            <div class="bookIcon" id="bookIcon">
+                <img src="../Images/education.svg" />
+            </div>
+            <div class="BOOKSTORE" id="BOOKSTORE">Bookstore</div>
+
+            <div class="searchBar">
+                <div class="searchIcon">
+                    <i class="material-icons" id="srhIcon">search</i>
+                </div>
+                <div class="searchInput">
+                    <input type="text" class="searchInput1" id="searchInput1" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="user">
+                <div class="userIcon">
+                    <i class="material-icons" id="usrIcon">perm_identity</i>
+
+                </div>
+                <div class="userName">Profile</div>
+            </div>
+
+            <div class="cart">
+                <div class="cartIcon">
+                    <i class="material-icons" id="usrIcon">shopping_cart</i>
+
+                </div>
+                <div class="cartName">Cart</div>
+            </div>
+
+
+        </div>
+        <div class="userOptions">
+
+            <button class=crt><i class="fas" style="font-size:25px"> &#xf07a; </i>  My Cart</button>
+            <button class="wishBtn">🤍 Wishlist</button>
+            <button class="logout logoutB">LogOut</button>
+
+        </div>
+
+        <div class="displayMainContainer">
+            <div class="displayMainInnerContainer">
+
+                <div class="bookContainer1">
+                    <img src="../Images/alchemist (1).png" width="100%" height="100%">
+                </div>
+                <div class="bookBtn">
+                    <button class="bagButton" id="bagButton">ADD TO BAG</button>
+                    <div class="productCounter" id="productCounter">
+                        <button class="counter-minus" id="counter-minus"> - </button>
+                        <div class="counter-display" id="counter-display"></div>
+
+                        <button class="counter-plus" id="counter-plus"> + </button>
+                    </div>
+                    <button class="wishButton" id="wishButton">🤍 WISHLIST</button>
+                    <button class="wishBAdded" id="wishBAdded">&#10084;&#65039; ADDED TO WISHLIST</button>
+
+                </div>
+            </div>
+            <div class="displayMainInnerContainer2">
+
+
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
+
+            <div class="feedbackContainer">
+                <div class="cfeed">Customer Feedback</div>
+                <div class="review">
+                    <div class="overall">Overall rating</div>
+                    <div class="star">
+                        <span class="material-icons">
+                            star_outline
+                        </span>
+                        <span class="material-icons">
+                            star_outline
+                        </span>
+                        <span class="material-icons">
+                            star_outline
+                        </span>
+                        <span class="material-icons">
+                            star_outline
+                        </span>
+                        <span class="material-icons">
+                            star_outline
+                        </span>
+                    </div>
+
+                    <div class="writeReview">
+                        <input type="text" class="inputReview" placeholder="Write a review">
+                    </div>
+                    <div class="reviewSubmit">
+                        <button class="sButton">SUBMIT</button>
+                    </div>
+                </div>
+
+                <div class="nme">
+                    <div class="nmeLogo">AC</div>
+                    <div class="fullNme">Aniket Chile</div>
+                </div>
+                <div class="str">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="strContent">
+                    <p>
+                        Good product. Even though the translation could have been better, Chanakya's neeti are thought provoking. Chanakya has written on many different topics and his writings are succinct.
+                    </p>
+                </div>
+
+
+                <div class="nme">
+                    <div class="nmeLogo">SB</div>
+                    <div class="fullNme">Shweta Bodkar</div>
+                </div>
+                <div class="str">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="strContent">
+                    <p>
+                        Good product. Even though the translation could have been better, Chanakya's neeti are thought provoking. Chanakya has written on many different topics and his writings are succinct.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

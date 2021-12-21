@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore Cart Page</title>
+
+    <link rel="stylesheet" href="/Cart/Cart.css">
+    <script src="/Cart/Cart.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="bookIcon" id="bookIcon">
+                <img src="../Images/education.svg" />
+            </div>
+            <div class="BOOKSTORE" id="BOOKSTORE">Bookstore</div>
+
+            <div class="searchBar">
+                <div class="searchIcon">
+                    <i class="material-icons" id="srhIcon">search</i>
+                </div>
+                <div class="searchInput">
+                    <input type="text" class="searchInput1" id="searchInput1" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="user">
+                <div class="userIcon">
+                    <i class="material-icons" id="usrIcon">perm_identity</i>
+
+                </div>
+                <div class="userName">Profile</div>
+            </div>
+
+            <div class="cart">
+                <div class="cartIcon">
+                    <i class="material-icons" id="usrIcon">shopping_cart</i>
+
+                </div>
+                <div class="cartName">Cart</div>
+            </div>
+
+
+        </div>
+        <div class="userOptions">
+            <button class=crt>My Cart</button>
+            <button class="wishBtn">Wishlist</button>
+            <button class="logout">LogOut</button>
+
+        </div>
+
+        <div class="cart-container">
+
+        </div>
+        <div class="pOrder"> <button class="placeOrder">Place Order</button></div>
+        <div class="AddressDetails">Address Details</div>
+        <div class="CustomerDetails">
+
+            <div class="custHead">
+                <div class=custDeatails>Customer Details</div>
+
+            </div>
+
+            <div class="personalDetails">
+                <div class="fullName">
+                    <div class="helperName">Full Name</div>
+                    <div class="name">
+                        <input type="text" class="inputName" autocomplete="off">
+                    </div>
+                </div>
+                <div class="mobileNumber">
+                    <div class="helperPhone">Mobile Number</div>
+                    <div class="mobile">
+                        <input type="text" class="inputNumber" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <div class="addressType"></div>
+
+            <div class="Address">
+                <div class="addressHead">Address</div>
+                <div class="typeAddress">
+                    <input type="text" class="inputAddress" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="locationDetails">
+                <div class="cityAddress">
+                    <div class="helperCity">City/Town</div>
+                    <div class="city">
+                        <input type="text" class="inputCity" autocomplete="off">
+                    </div>
+                </div>
+                <div class="stateAddress">
+                    <div class="helperState">State</div>
+                    <div class="state">
+                        <input type="text" class="inputState" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <div class="continiue">
+                <button type="button" class="cntButton">CONTINUE</button>
+            </div>
+
+        </div>
+        <div class="OrderSummary">Order Summary</div>
+        <div class="OrderSummary1">
+
+            <div class="summaryHead">Order Summary</div>
+            <div class="once">
+
+                <!-- COde for Book details -->
+
+            </div>
+
+            <div class="checkout">
+                <button class="checkoutButton">CHECKOUT</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,495 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 90vh;
+    width: 98vw;
+    /* border: 1px solid red; */
+}
+
+*:focus {
+    outline: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    /* border:1px solid blue; */
+    background: #A03037 0% 0% no-repeat padding-box;
+}
+
+.bookIcon {
+    margin-left: 15.5%;
+    /* width: 31px; */
+    width: 2%;
+    /* height: 24px; */
+    height: 30%;
+    opacity: 1;
+}
+
+.BOOKSTORE {
+    margin-left: 0.8%;
+    width: 6%;
+    height: 33%;
+    text-align: left;
+    font: normal normal normal 20px/26px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3%;
+    width: 33%;
+    height: 55%;
+    background: #FCFCFC 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    /* border:2px solid black; */
+}
+
+#srhIcon {
+    padding-top: 5px;
+    /* background: #9D9D9D 0% 0% no-repeat padding-box; */
+    opacity: 1;
+}
+
+.searchInput {
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 96%;
+}
+
+.searchInput1 {
+    width: 98.5%;
+    height: 80%;
+    border: 1px solid transparent;
+    font: normal normal normal 12px/16px Roboto;
+    letter-spacing: 0px;
+    color: #9D9D9D;
+    opacity: 1;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 7%;
+    margin-left: 13%;
+    /* border: 1px solid black; */
+}
+
+.userIcon {
+    color: white;
+    /* background: #FFFFFF 0% 0% no-repeat padding-box; */
+    opacity: 1;
+}
+
+.userIcon,
+.userName {
+    height: 50%;
+    width: 100%;
+}
+
+.userIcon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.userName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    text-align: left;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0.45px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 7%;
+    /* margin-left:5%; */
+    /* border: 1px solid black; */
+}
+
+.cartIcon,
+.cartName {
+    height: 50%;
+    width: 100%;
+}
+
+.cartIcon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    /* background: #FFFFFF 0% 0% no-repeat padding-box; */
+    opacity: 1;
+}
+
+.cartName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    text-align: left;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0.45px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.entireWishList {
+    /* border: 2px solid red; */
+    width: 75%;
+    margin-left: 12%;
+}
+
+.wishHead {
+    display: flex;
+    height: 8%;
+    width: 100%;
+    /* margin-left: 12%; */
+    margin-top: 5%;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border: 1px solid #E4E4E4;
+    border-radius: 1px;
+    opacity: 1;
+    flex-direction: column;
+}
+
+.wi {
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    padding-left: 8%;
+}
+
+.wish-container {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    width: 125%;
+    margin-left: -10%;
+    margin-top: -2%;
+    border-color: whitesmoke;
+}
+
+.deleteIcon {
+    /* border: 2px solid red; */
+    margin-left: 10%;
+    padding-left: 10%;
+}
+
+.userOptions {
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    width: 10%;
+    background-color: #FFFFFF;
+    /* border: 1px solid grey; */
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 5%;
+    z-index: 1;
+    display: none;
+}
+
+.bookHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gainsboro;
+    height: 135px;
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+.bookContainer {
+    height: 85px;
+    width: 65px;
+    /* border: 1px solid red; */
+}
+
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    width: 73%;
+    margin-left: 5%;
+    /* border: 1px solid red; */
+}
+
+.bookName1 {
+    /* display: flex; */
+    text-align: left;
+    height: 20%;
+    width: 150px;
+    margin-top: 3.5%;
+    font: normal normal normal 14px/17px Lato;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+    /* border: 1px solid black; */
+}
+
+.author1 {
+    text-align: left;
+    font: normal normal normal 10px/12px Lato;
+    letter-spacing: 0px;
+    color: #9D9D9D;
+    opacity: 1;
+    height: 20%;
+    width: 150px;
+    /* border:2px solid #9D9D9D; */
+}
+
+.price1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 30%;
+    width: 75px;
+    /* border: 1px solid blue; */
+}
+
+.price11 {
+    text-align: left;
+    font: normal normal bold 15px/18px Lato;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+    /* border: 1px solid blue; */
+}
+
+.originalPrice1 {
+    text-align: left;
+    text-decoration: line-through;
+    font: normal normal normal 9px/11px Lato;
+    letter-spacing: 0px;
+    color: #9D9D9D;
+    opacity: 1;
+    /* border: 1px solid black; */
+}
+
+.WB {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*     position:absolute; */
+    height: 100px;
+    width: 100px;
+    margin-left: 90%;
+    margin-top: -10%;
+    padding-top: 5%;
+    /* border: 1px solid red; */
+}
+
+.logout {
+    border: 2px solid #A03037;
+}
+
+.removeWish {
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+    margin-left: 50%;
+    /* margin-top: -6%; */
+    height: 30px;
+    width: 30px;
+    /* border: 1px solid blue; */
+}
+
+.aCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+    height: 30px;
+    width: 30px;
+    /* margin-top: -4.6%;; */
+}
+
+@media only screen and (min-width: 300px) and (max-width: 370px) {
+    .main-container {
+        justify-content: center;
+        align-items: center;
+    }
+    .bookIcon {
+        /*     border:1px solid green; */
+        height: 25px;
+        width: 30px;
+        margin-left: 1%;
+    }
+    .BOOKSTORE {
+        height: 25px;
+        width: 100px;
+        margin-left: 5%;
+    }
+    .searchInput {
+        display: none;
+    }
+    .searchInput1 {
+        display: none;
+    }
+    .searchBar {
+        display: flex;
+        font-size: 10px;
+        width: 80px;
+        margin-left: 1%;
+    }
+    .cart {
+        margin-left: auto;
+    }
+    .user {
+        margin-left: auto;
+    }
+    .flex-container1 {
+        justify-content: center;
+        margin-top: 10%;
+    }
+    .bookContainer {
+        height: 75px;
+    }
+    .wish-container {
+        width: 250px;
+        margin-left: 0%;
+    }
+    .bookHead {
+        /* border:1px solid red; */
+        width: 220px;
+        justify-content: center;
+        /*             align-items:center; */
+    }
+    .bookName1 {
+        width: 150px;
+        margin-top: 18%;
+        /* border:1px solid red; */
+    }
+    .author1 {
+        width: 75px;
+        /* border:1px solid red; */
+    }
+    .price1 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: 30%;
+        width: 70px;
+        /* border: 1px solid blue; */
+    }
+    .WB {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        position: absolute;
+        height: 30px;
+        width: 73px;
+        margin-left: 25%;
+        margin-top: 15%;
+    }
+    .removeWish {
+        display: flex;
+        justify-content: center;
+        margin-left: 1px;
+        height: 25px;
+        width: 25px;
+        /* border: 1px solid red; */
+    }
+    .aCart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+        /* border: 1px solid red; */
+        height: 25px;
+        width: 25px;
+        /* margin-top: -4.6%;; */
+    }
+}
+
+
+/* MEDIA QUERY FOR IPAD */
+
+@media only screen and (min-width: 750px) and (max-width: 800px) {
+    .bookIcon {
+        /*     border:1px solid green; */
+        height: 25px;
+        width: 30px;
+        /*             margin-left:%; */
+    }
+    .BOOKSTORE {
+        height: 25px;
+        width: 100px;
+        /* margin-left:%; */
+    }
+    .searchBar {
+        display: flex;
+        font-size: 10px;
+        width: 280px;
+    }
+    .user {
+        margin-left: 10%;
+    }
+    .flex-container1 {
+        margin-top: 10%;
+        /* border-top:1px solid blue; */
+    }
+    .bookName1 {
+        width: 150px;
+        margin-top: 7%;
+        /* border:1px solid red; */
+    }
+    .author1 {
+        width: 75px;
+        /* border:1px solid red; */
+    }
+    .price1 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: 30%;
+        width: 80px;
+        /* border: 1px solid blue; */
+    }
+    .WB {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*     position:absolute; */
+        height: 30px;
+        width: 100px;
+        margin-left: 70%;
+        margin-top: -18%;
+        /* border: 1px solid red; */
+    }
+    .removeWish {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+    }
+    .aCart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+    }
+}

@@ -1,0 +1,426 @@
+*:focus {
+    outline: blue;
+}
+
+.main-container {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 0.31;
+}
+
+.imgcard {
+    display: flex;
+    position: absolute;
+    top: 23%;
+    left: 24%;
+    width: 46%;
+    height: 50%;
+    /* display: none; */
+    /* border: 2px solid red; */
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    opacity: 1;
+}
+
+.image1 {
+    display: flex;
+    position: absolute;
+    top: 14%;
+    left: 8%;
+    width: 245px;
+    height: 245px;
+    /* border: 1px solid red; */
+    /*  background-image: url('/Assets/2766594.png'); */
+    /*  background: transparent url('/Assets/2766594.png') 0% 0% no-repeat padding-box; */
+    opacity: 1;
+}
+
+#LoginPageLogo {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.LoginLogoTitle {
+    position: absolute;
+    top: 87%;
+    left: 12%;
+    width: 220px;
+    height: 24px;
+    font-weight: bold;
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: uppercase;
+    opacity: 1
+}
+
+.MainContainer {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 19%;
+    left: 46%;
+    width: 25%;
+    height: 58%;
+    /* display:none; */
+    /* border:2px solid green; */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 15px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.logSign {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10%;
+    height: 40px;
+    width: 70%;
+    /* border:1px solid  blue; */
+}
+
+.login {
+    text-align: left;
+    font: normal normal medium 25px/33px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: uppercase;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.signup {
+    text-align: left;
+    font: normal normal medium 25px/33px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: uppercase;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.redIdentifier {
+    display: flex;
+    /* display: none; */
+}
+
+.redIdentifierLogin {
+    width: 40px;
+    height: 5px;
+    background-color: #A03037;
+    margin-bottom: 10%;
+    /* border:2px solid green; */
+    margin-left: 10%;
+    margin-right: 20%;
+    border-radius: 4px;
+    /* display: none; */
+}
+
+.redIdentifierSignup {
+    width: 40px;
+    height: 5px;
+    background-color: #A03037;
+    margin-bottom: 10%;
+    /* border:2px solid green; */
+    margin-left: 42%;
+    margin-right: 12%;
+    border-radius: 4px;
+    /* display: none; */
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    /* display: none; */
+    /* left: 727px; */
+    width: 70%;
+    min-height: 75%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    /* border: 1px solid #FF001C; */
+    /* border-radius: 2px; */
+    opacity: 1;
+}
+
+.login {
+    display: flex;
+    position: absolute;
+    /* top: 28px;
+    left: 69px;  */
+    width: 5.27%;
+    height: 4.296875%;
+    text-align: left;
+    font: 25px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.signup {
+    position: absolute;
+    /* top: 27.9px; */
+    left: 63%;
+    width: 6.5153%;
+    height: 4.296875%;
+    text-align: left;
+    font: 25px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.sd {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 200px;
+    height: 10px;
+    text-align: left;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    /* border:0.5px solid green; */
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.wrong {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 200px;
+    height: 10px;
+    text-align: left;
+    /* border: 0.5px solid blue; */
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #FF001C;
+    visibility: hidden;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.enterName {
+    height: 35px;
+    width: 98%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.enterEmail {
+    height: 35px;
+    width: 98%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.enterPassword {
+    height: 35px;
+    width: 98%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.enterPhoneNumber {
+    height: 35px;
+    width: 98%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.signupButton {
+    margin-top: 2%;
+    height: 37px;
+    width: 100%;
+    background: #A03037 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    font-size: 15px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.loginDetails {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 24%;
+    display: none;
+    /* left: 727px; */
+    width: 70%;
+    height: 75%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    /* border: 1px solid #FF001C; */
+    /* border-radius: 2px; */
+    opacity: 1;
+}
+
+.enterEmail2 {
+    height: 35px;
+    width: 98%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.enterPassword2 {
+    height: 35px;
+    width: 98%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.sd2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 200px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    /* border:0.5px solid green; */
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.wrong2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 200px;
+    height: 15px;
+    text-align: left;
+    /* border: 0.5px solid blue; */
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #FF001C;
+    visibility: hidden;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.loginButton {
+    margin-top: 5%;
+    height: 37px;
+    width: 100%;
+    background: #A03037 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    font-size: 15px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.or {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    height: 37px;
+    width: 100%;
+    /* border: 1px solid blue;; */
+    border-radius: 3px;
+    opacity: 1;
+    font-size: 15px;
+    opacity: 1;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8%;
+    height: 37px;
+    width: 100%;
+    /* border: 1px solid blue;; */
+    border-radius: 3px;
+    opacity: 1;
+    font-size: 15px;
+    opacity: 1;
+}
+
+.fbButton {
+    height: 100%;
+    width: 48%;
+    background: #4266B2 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    color: #FFFFFF;
+    /* border:1px solid green; */
+}
+
+.googleButton {
+    width: 48%;
+    height: 37px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    opacity: 1;
+    color: #0A0102;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 400px) {
+    .imgcard {
+        display: none;
+    }
+    .sign {
+        width: 90%;
+        left: 5%;
+        top: 2%;
+    }
+}
+
+@media only screen and (min-width: 350px)and (max-width: 600px) {
+    .imgcard {
+        display: none !important;
+    }
+    .MainContainer {
+        width: 70vw;
+        height: 60vh;
+        left: 16%;
+        top: 10%;
+        /* border: 2px solid red; */
+    }
+    .signup {
+        left: 53%;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 800px) {
+    .imgcard {
+        top: 20%;
+        left: 10%;
+        height: 35%;
+    }
+    .sign {
+        left: 50%;
+        width: 40%;
+        height: 39%;
+        top: 18%;
+        /*         display:none */
+    }
+}
